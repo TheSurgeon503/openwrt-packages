@@ -1,3 +1,20 @@
+Package: ath9k-htc-firmware
+Version: 20240220-r1
+Depends: libc
+Source: feeds/base/package/firmware/linux-firmware
+SourceName: linux-firmware
+LicenseFiles: LICENCE.open-ath9k-htc-firmware
+Section: firmware
+SourceDateEpoch: 1711714307
+URL: http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 133120
+Filename: ath9k-htc-firmware_20240220-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 62502
+SHA256sum: 681b658d264b3e1fe2b1334056b744314ae9bd255e7e481c503cdfda4f7d6a49
+Description:  AR9271/AR7010 firmware
+
 Package: base-files
 Version: 1587~cc6c3a6ee8
 Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, ubi-utils, fstools, fwtool
@@ -10,9 +27,104 @@ URL: http://openwrt.org/
 Architecture: arm_cortex-a9_vfpv3-d16
 Installed-Size: 286720
 Filename: base-files_1587~cc6c3a6ee8_arm_cortex-a9_vfpv3-d16.ipk
-Size: 55849
-SHA256sum: 67472cd135c72717b16578efd5f852ae19b85f800c5d201a8f0882594d2fc9a3
+Size: 55860
+SHA256sum: 302115dcb991c6cc806c691708c45119f6486e0a06373953c5fa0a50b5a2a18a
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: bnx2-firmware
+Version: 20240220-r1
+Depends: libc
+Source: feeds/base/package/firmware/linux-firmware
+SourceName: linux-firmware
+Section: firmware
+SourceDateEpoch: 1711714307
+URL: http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 225280
+Filename: bnx2-firmware_20240220-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 105870
+SHA256sum: b3b86bb54545ee96ee192da4d9015e9cb285fa0015f236f62842a2e39a3b346e
+Description:  Broadcom BCM5706/5708/5709/5716 firmware
+
+Package: bnx2x-firmware
+Version: 20240220-r1
+Depends: libc
+Source: feeds/base/package/firmware/linux-firmware
+SourceName: linux-firmware
+Section: firmware
+SourceDateEpoch: 1711714307
+URL: http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 2703360
+Filename: bnx2x-firmware_20240220-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2415497
+SHA256sum: 41fb13454eee4e1b35198c45c96deaca3e59b77fb858732483ea7c7929ec6eed
+Description:  =QLogic 5771x/578xx firmware
+
+Package: busybox
+Version: 1.36.1-r1
+Depends: libc, libpam, jsonfilter
+Conflicts: busybox-selinux
+Source: feeds/base/package/utils/busybox
+SourceName: busybox
+License: GPL-2.0
+LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
+Section: base
+Require-User: ntp=123:ntp=123
+SourceDateEpoch: 1705756978
+URL: http://busybox.net/
+CPE-ID: cpe:/a:busybox:busybox
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 686080
+Filename: busybox_1.36.1-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 337823
+SHA256sum: 11b3f7bae129becc6c56312fa9184c8097ee675b0027aa91fe623bf4ac652297
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+
+Package: ca-bundle
+Version: 20240203-r1
+Depends: libc
+Provides: ca-certs
+Source: feeds/base/package/system/ca-certificates
+SourceName: ca-certificates
+License: GPL-2.0-or-later MPL-2.0
+LicenseFiles: debian/copyright
+Section: base
+SourceDateEpoch: 1711053893
+Architecture: all
+Installed-Size: 225280
+Filename: ca-bundle_20240203-r1_all.ipk
+Size: 128168
+SHA256sum: 59c938e526a37aba3fa8e84c10ed2386f765170c72f3be3567d361bba72eff12
+Description:  System CA certificates as a bundle
+
+Package: dnsmasq-full
+Version: 2.90-r2
+Depends: libc, libubus20231128, libnettle8, kmod-ipt-ipset, libnetfilter-conntrack3, nftables-json
+Provides: dnsmasq
+Source: feeds/base/package/network/services/dnsmasq
+SourceName: dnsmasq
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Require-User: dnsmasq=453:dnsmasq=453
+SourceDateEpoch: 1710893901
+URL: http://www.thekelleys.org.uk/dnsmasq/
+CPE-ID: cpe:/a:thekelleys:dnsmasq
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 419840
+Filename: dnsmasq-full_2.90-r2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 199239
+SHA256sum: 10031e32ac28449821dcdaf605b5d730fa98d8beb8ca4bc5d1f89bb040222e84
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+ 
+ This is a fully configurable variant with DHCPv4, DHCPv6, DNSSEC, Authoritative DNS
+ and nftset, Conntrack support & NO_ID enabled by default.
 
 Package: fstools
 Version: 2024.01.22~08cd7083-r1
@@ -45,6 +157,26 @@ Filename: fwtool_2019.11.12~8f7fe925-r1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 4577
 SHA256sum: fe85aad014012796a4dc90f7a17a6c42103b45acd7f74a77fe411cc506fafd34
 Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: jansson4
+Version: 2.14-r3
+Depends: libc
+Provides: jansson
+Source: feeds/base/package/libs/jansson
+SourceName: jansson
+License: MIT
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1679419702
+URL: http://www.digip.org/jansson/
+ABIVersion: 4
+CPE-ID: cpe:/a:jansson_project:jansson
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 51200
+Filename: jansson4_2.14-r3_arm_cortex-a9_vfpv3-d16.ipk
+Size: 20312
+SHA256sum: 1844c86944c5c570d13ee18b6b24d37b83a439a92bb3a17c22067110d2c961ea
+Description:  Jansson is a C library for encoding, decoding and manipulating JSON data
 
 Package: jshn
 Version: 2024.01.26~c1be5057-r1
@@ -1896,6 +2028,25 @@ Filename: kmod-crypto-xts_6.1.82-r1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 4608
 SHA256sum: d3ed6c338abda2509ac5d37c120841c8320f51d5c461d3e2bbdacfc35a54a59e
 Description:  XTS cipher CryptoAPI module
+
+Package: kmod-cryptodev
+Version: 6.1.82+1.13-mvebu-1
+Depends: kernel (=6.1.82~7e9d72c9afec89ed924865cc82184791-r1), kmod-crypto-authenc, kmod-crypto-hash
+Source: feeds/base/package/kernel/cryptodev-linux
+SourceName: cryptodev-linux
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: kernel
+SourceDateEpoch: 1709716665
+URL: http://cryptodev-linux.org/
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 61440
+Filename: kmod-cryptodev_6.1.82+1.13-mvebu-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 21749
+SHA256sum: 88926694726cde487ad0cfc80f77f423f53abc464f1baa1d7fa8c756bb0f80d6
+Description:  This is a driver for that allows to use the Linux kernel supported
+ hardware ciphers by user-space applications.
 
 Package: kmod-dax
 Version: 6.1.82-r1
@@ -13326,6 +13477,57 @@ Size: 4233
 SHA256sum: 4a4835ac5743148f95c9b6a71633c0764c7d4c56dccb18ab005d809336b9e2b7
 Description:  blobmsg <-> json conversion library
 
+Package: libevent2-7
+Version: 2.1.12-r2
+Depends: libc
+Provides: libevent2
+Source: feeds/base/package/libs/libevent2
+SourceName: libevent2
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1710289483
+URL: http://libevent.org
+ABIVersion: -7
+CPE-ID: cpe:/a:libevent_project:libevent
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 184320
+Filename: libevent2-7_2.1.12-r2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 84879
+SHA256sum: 0cba70318fcf92bb74943d20367c46f504da267ec0997f7f2e4a582e6676c877
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent shared library historically
+ containing both the core & extra libraries.
+
+Package: libexpat
+Version: 2.6.2-r1
+Depends: libc
+Source: feeds/packages/libs/expat
+SourceName: expat
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1711976881
+URL: https://libexpat.github.io/
+CPE-ID: cpe:/a:libexpat_project:libexpat
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 112640
+Filename: libexpat_2.6.2-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 44828
+SHA256sum: 6feba2d07b6be4c7d0d4d614e133eb48bdd929df7a465c09813e42b5547bfaba
+Description:  A fast, non-validating, stream-oriented XML parsing library.
+
 Package: libgcc1
 Version: 13.2.0-r4
 Provides: libgcc
@@ -13345,6 +13547,51 @@ Filename: libgcc1_13.2.0-r4_arm_cortex-a9_vfpv3-d16.ipk
 Size: 20172
 SHA256sum: 764cd0a00e52b1fed344b1996bf4bc4825f201f9ac639132b108ef155f70ad80
 Description:  GCC support library
+
+Package: libgmp10
+Version: 6.3.0-r1
+Depends: libc
+Provides: libgmp
+Source: feeds/base/package/libs/gmp
+SourceName: gmp
+License: GPL-2.0-or-later
+Section: libs
+SourceDateEpoch: 1697533516
+URL: http://gmplib.org/
+ABIVersion: 10
+CPE-ID: cpe:/a:gmplib:gmp
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 358400
+Filename: libgmp10_6.3.0-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 190612
+SHA256sum: d45f509394ca0cd11fd2e6fedab9a7935d798a7c572304bdaf702fb9dc44a148
+Description:  GMP is a free library for arbitrary precision arithmetic, operating on
+ signed integers, rational numbers, and floating point numbers.
+
+Package: libgnutls
+Version: 3.8.3-r1
+Depends: libc, libnettle8, libgmp10, libtasn1, kmod-cryptodev, libatomic1
+Source: feeds/packages/libs/gnutls
+SourceName: gnutls
+License: LGPL-2.1-or-later
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1711976881
+URL: http://www.gnutls.org/
+CPE-ID: cpe:/a:gnu:gnutls
+Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1945600
+Filename: libgnutls_3.8.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 915917
+SHA256sum: 0ef306e319506d0d6aac7b382d1e1f8d56ea2b12e0adc63b629968850eb920e2
+Description:  GnuTLS is a secure communications library implementing the SSL, TLS
+ and DTLS protocols and technologies around them. It provides a simple
+ C language application programming interface (API) to access the secure
+ communications protocols as well as APIs to parse and write X.509, PKCS12,
+ OpenPGP and other required structures. It is aimed to be portable and
+ efficient with focus on security and interoperability.
+ This package contains the GnuTLS shared library, needed by other programs.
 
 Package: libjson-c5
 Version: 0.17-r1
@@ -13367,6 +13614,156 @@ Size: 25584
 SHA256sum: 03b8d427da45ac61ca3979e87116bf0bb75d2c54b42893f98f20d00f2158ae06
 Description:  This package contains a library for javascript object notation backends.
 
+Package: libmnl0
+Version: 1.0.5-r1
+Depends: libc
+Provides: libmnl
+Source: feeds/base/package/libs/libmnl
+SourceName: libmnl
+License: LGPL-2.1+
+Section: libs
+SourceDateEpoch: 1662478604
+URL: http://www.netfilter.org/projects/libmnl/
+ABIVersion: 0
+CPE-ID: cpe:/a:netfilter:libmnl
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 20480
+Filename: libmnl0_1.0.5-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 6694
+SHA256sum: eb442829312b0f03f304c6cadd9de574c8fa0dc2694865a2452b6373b4b95ec5
+Description:  libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel. The main features of this library are:
+ .
+ * Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ * Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ * Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building, validating,
+ parsing and sequence tracking, easier.
+ .
+ * Easy to re-use: you can use the library to build your own abstraction layer
+ on top of this library.
+ .
+ * Decoupling: the interdependency of the main bricks that compose the library
+ is reduced, i.e. the library provides many helpers, but the programmer is not
+ forced to use them.
+
+Package: libnetfilter-conntrack3
+Version: 1.0.9-r2
+Depends: libc, libnfnetlink0, kmod-nf-conntrack-netlink, libmnl0
+Provides: libnetfilter-conntrack
+Source: feeds/base/package/libs/libnetfilter-conntrack
+SourceName: libnetfilter_conntrack
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1695147673
+URL: http://www.netfilter.org/projects/libnetfilter_conntrack/
+ABIVersion: 3
+CPE-ID: cpe:/a:netfilter:libnetfilter_conntrack
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 92160
+Filename: libnetfilter-conntrack3_1.0.9-r2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 33964
+SHA256sum: 0032f1b01f5ac628ddb8429191b9f286b1daaab1872f925760f19abbc6887ea7
+Description:  libnetfilter_conntrack is a userspace library providing a programming
+ interface (API) to the in-kernel connection tracking state table. The
+ library libnetfilter_conntrack has been previously known as
+ libnfnetlink_conntrack and libctnetlink. This library is currently
+ used by conntrack-tools among many other applications.
+
+Package: libnettle8
+Version: 3.9.1-r1
+Depends: libc, libgmp10
+Provides: libnettle
+Source: feeds/base/package/libs/nettle
+SourceName: nettle
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1689773135
+URL: http://www.lysator.liu.se/~nisse/nettle/
+ABIVersion: 8
+CPE-ID: cpe:/a:nettle_project:nettle
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 563200
+Filename: libnettle8_3.9.1-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 342228
+SHA256sum: d683722c1db48705c3d29b3af807ad9e91414f02a629a24f3fec999cd1d32d45
+Description:  GNU crypto library
+
+Package: libnfnetlink0
+Version: 1.0.2-r1
+Depends: libc
+Provides: libnfnetlink
+Source: feeds/base/package/libs/libnfnetlink
+SourceName: libnfnetlink
+License: GPL-2.0+
+Section: libs
+SourceDateEpoch: 1662478605
+URL: http://netfilter.org/projects/libnfnetlink/
+ABIVersion: 0
+CPE-ID: cpe:/a:netfilter:libnfnetlink
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 30720
+Filename: libnfnetlink0_1.0.2-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 10810
+SHA256sum: 1a18d69f1fdca00445353e162d990fde9a4830d7b2adb3d4d307f02f73a91f52
+Description:  libnfnetlink is is the low-level library for netfilter related kernel/userspace communication.
+ It provides a generic messaging infrastructure for in-kernel netfilter subsystems
+ (such as nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their respective users
+ and/or management tools in userspace.
+
+Package: libnftnl11
+Version: 1.2.6-r1
+Depends: libc, libmnl0
+Provides: libnftnl
+Source: feeds/base/package/libs/libnftnl
+SourceName: libnftnl
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1689683839
+URL: http://www.netfilter.org/projects/libnftnl
+ABIVersion: 11
+CPE-ID: cpe:/a:netfilter:libnftnl
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 153600
+Filename: libnftnl11_1.2.6-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 51431
+SHA256sum: 1286b74661965b7892655678be367dd35c6b2abf31d873f9f297ff1e7b46e5b9
+Description:  libnftnl is a userspace library providing a low-level netlink
+ programming interface (API) to the in-kernel nf_tables subsystem.
+
+Package: libnghttp2-14
+Version: 1.57.0-r1
+Depends: libc
+Provides: libnghttp2
+Source: feeds/packages/libs/nghttp2
+SourceName: nghttp2
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1711976881
+ABIVersion: -14
+CPE-ID: cpe:/a:nghttp2:nghttp2
+Maintainer: Hans Dedecker <dedeckeh@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 143360
+Filename: libnghttp2-14_1.57.0-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 61335
+SHA256sum: e6894a5b1c3329af6282e38e07717780f72d4521689b15039f4497a263f0f4c3
+Description:  C library implementing the framing layer of the HTTP/2 protocol. It can be used to build a HTTP/2-capable HTTP client or server
+
 Package: libnl-tiny1
 Version: 2023.12.05~965c4bf4-r1
 Depends: libc
@@ -13384,6 +13781,94 @@ Filename: libnl-tiny1_2023.12.05~965c4bf4-r1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 13548
 SHA256sum: 4a52297461a43a0dbe0921ea09f54e0e99528b1f1c2e41a30e2ed158d7774ff5
 Description:  This package contains a stripped down version of libnl
+
+Package: libopenssl-conf
+Version: 3.0.13-r1
+Depends: libc, libopenssl3
+Source: feeds/base/package/libs/openssl
+SourceName: openssl
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1706852812
+URL: http://www.openssl.org/
+CPE-ID: cpe:/a:openssl:openssl
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 30720
+Filename: libopenssl-conf_3.0.13-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 7489
+SHA256sum: dff9d9c785a4a9cb484634da21e6d5f2c777103d125f1d16d034b585cd9d5bad
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the
+ Transport Layer Security (TLS) protocol as well as a full-strength
+ general-purpose cryptography library.
+ This package installs the OpenSSL configuration file /etc/ssl/openssl.cnf.
+
+Package: libopenssl3
+Version: 3.0.13-r1
+Depends: libc, kmod-cryptodev, libatomic1
+Provides: libopenssl
+Source: feeds/base/package/libs/openssl
+SourceName: openssl
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1706852812
+URL: http://www.openssl.org/
+ABIVersion: 3
+CPE-ID: cpe:/a:openssl:openssl
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 3635200
+Filename: libopenssl3_3.0.13-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 1718867
+SHA256sum: d232dccd8b6e52d821989d466efd05a8124e19f47d5dbc8c1bf3a78b85e343a2
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the
+ Transport Layer Security (TLS) protocol as well as a full-strength
+ general-purpose cryptography library.
+ This package contains the OpenSSL shared libraries, needed by other programs.
+
+Package: libpam
+Version: 1.5.2-r1
+Depends: libc
+Source: feeds/packages/libs/libpam
+SourceName: libpam
+License: BSD-3c GPL
+LicenseFiles: COPYING Copyright
+Section: libs
+SourceDateEpoch: 1711976881
+URL: http://www.kernel.org/pub/linux/libs/pam
+CPE-ID: cpe:/a:linux-pam:linux-pam
+Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 624640
+Filename: libpam_1.5.2-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 174674
+SHA256sum: fd19ef4613fa076251348628c02e287f22f4260bb0f8aa5559c76a085710c585
+Description:  The Linux-PAM Pluggable Authentication Modules.
+
+Package: libprotobuf-c
+Version: 1.4.1-r1
+Depends: libc
+Source: feeds/packages/libs/protobuf-c
+SourceName: libprotobuf-c
+License: BSD-2-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1711976881
+URL: https://github.com/protobuf-c/protobuf-c
+CPE-ID: cpe:/a:protobuf-c_project:protobuf-c
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 20480
+Filename: libprotobuf-c_1.4.1-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 9717
+SHA256sum: d3029c94760c9b960b6dca64be80feb51d410282f141cd0b61917f4cb797001c
+Description:  Runtime library to use Google Protocol Buffers from C applications.
+ Protocol Buffers are a way of encoding structured data in an efficient yet
+ extensible format. Google uses Protocol Buffers for almost all of its
+ internal RPC protocols and file formats.
 
 Package: libpthread
 Version: 1.2.4-r4
@@ -13403,6 +13888,38 @@ Filename: libpthread_1.2.4-r4_arm_cortex-a9_vfpv3-d16.ipk
 Size: 918
 SHA256sum: 96b4f84c94dc99dbc518b71835ae01822c9cca48b682a1fd2c8652bc9d8f93fb
 Description:  POSIX thread library
+
+Package: libpython3-3.11
+Version: 3.11.7-r1
+Depends: libc, libpthread
+Provides: libpython3
+Source: feeds/packages/lang/python/python3
+SourceName: python3
+License: Python-2.0.1 0BSD
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+SourceDateEpoch: 1711976881
+URL: https://www.python.org/
+ABIVersion: -3.11
+CPE-ID: cpe:/a:python:python
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 3379200
+Filename: libpython3-3.11_3.11.7-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 1207807
+SHA256sum: a5350f86f5457aaf8789ebbc67381a7fbaead36f52917f203d386396c2f16ea6
+Description:  Python is an interpreted, interactive, object-oriented programming
+ language. It incorporates modules, exceptions, dynamic typing, very high
+ level dynamic data types, and classes. It supports multiple programming
+ paradigms beyond object-oriented programming, such as procedural and
+ functional programming. Python combines remarkable power with very clear
+ syntax. It has interfaces to many system calls and libraries, as well as
+ to various window systems, and is extensible in C or C++. It is also
+ usable as an extension language for applications that need a
+ programmable interface. Finally, Python is portable: it runs on many
+ Unix variants including Linux and macOS, and on Windows.
+ 
+ This package contains only core Python library.
 
 Package: librt
 Version: 1.2.4-r4
@@ -13443,6 +13960,29 @@ Size: 41107
 SHA256sum: 9470ffa0b2e87ab258f32faf0ff6d8f1de378985fe39fc01af406699bdd70bae
 Description:  The smartcols library is used to print tables and trees in a pretty way.
 
+Package: libsodium
+Version: 1.0.19-r1
+Depends: libc
+Source: feeds/packages/libs/libsodium
+SourceName: libsodium
+License: ISC
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1711976881
+URL: https://github.com/jedisct1/libsodium
+Maintainer: Damiano Renfer <x9w2n7xnu@relay.firefox.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 256000
+Filename: libsodium_1.0.19-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 128251
+SHA256sum: d93a2d998927e13a5cd01de191504a918402f8488fe26687f44efb46dda3101c
+Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc.
+ NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.
+ Sodium is a portable, cross-compilable, installable, packageable fork of NaCl (based on the latest released upstream version nacl-20110221), with a compatible API.
+ The design choices, particularly in regard to the Curve25519 Diffie-Hellman function, emphasize security (whereas NIST curves emphasize "performance" at the cost of security), and "magic constants" in NaCl/Sodium have clear rationales.
+ The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
+ And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
+
 Package: libstdcpp6
 Version: 13.2.0-r4
 Provides: libstdcpp
@@ -13462,6 +14002,26 @@ Filename: libstdcpp6_13.2.0-r4_arm_cortex-a9_vfpv3-d16.ipk
 Size: 595035
 SHA256sum: 8d81715d883aa4c6c8cca854b020d317d51e9d5879122af97615b5b0d928991e
 Description:  GNU Standard C++ Library v3
+
+Package: libtasn1
+Version: 4.19.0-r2
+Depends: libc
+Source: feeds/packages/libs/libtasn1
+SourceName: libtasn1
+License: LGPL-2.1-or-later
+LicenseFiles: COPYING.LIB
+Section: libs
+SourceDateEpoch: 1711976881
+URL: https://www.gnu.org/software/libtasn1/
+CPE-ID: cpe:/a:gnu:libtasn1
+Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 61440
+Filename: libtasn1_4.19.0-r2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 30953
+SHA256sum: 3fa801211a3f6caa557a1d24f42dad0e73a0c56c6e93cd148b0434572905a15b
+Description:  This is a library for Abstract Syntax Notation One (ASN.1) and
+ Distinguish Encoding Rules (DER) manipulation.
 
 Package: libubox20240126
 Version: 2024.01.26~c1be5057-r1
@@ -13533,6 +14093,28 @@ Size: 4318
 SHA256sum: f88911d45d2f65198ada01059599836911defeb988ba4fb8186e6499dfd12e8a
 Description:  udebug client library
 
+Package: libunbound
+Version: 1.19.3-r1
+Depends: libc, ca-bundle, libopenssl3, libsodium, libmnl0, libevent2-7, libpthread, libnghttp2-14, python3-base, libprotobuf-c
+Source: feeds/packages/net/unbound
+SourceName: unbound
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+Require-User: unbound:unbound
+SourceDateEpoch: 1711976881
+URL: https://nlnetlabs.nl/projects/unbound/about
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1064960
+Filename: libunbound_1.19.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 482080
+SHA256sum: 6739da169c032371b781aef6c54960fb99af5e8fa798a05fa33b464b63760de3
+Description:  This package contains the Unbound library including 'libevent', 'libmnl', and
+ 'libpthread' to better handle large networks with heavy query loads. Options
+ are available to custom trim Unbound for smaller targets.
+
 Package: libuuid1
 Version: 2.39.3-r1
 Depends: libc, librt
@@ -13556,6 +14138,29 @@ Description:  The UUID library is used to generate unique identifiers for object
  generates UUIDs compatible with those created by the Open Software
  Foundation (OSF) Distributed Computing Environment (DCE) utility.
 
+Package: libwolfssl5.6.6.e624513f
+Version: 5.6.6-stable-r1
+Depends: libc, kmod-cryptodev
+Conflicts: libwolfsslcpu-crypto
+Provides: libcyassl, libwolfssl, libcyassl5.6.6.e624513f
+Source: feeds/base/package/libs/wolfssl
+SourceName: wolfssl
+License: GPL-2.0-or-later
+LicenseFiles: LICENSING COPYING
+Section: libs
+SourceDateEpoch: 1704216189
+URL: http://www.wolfssl.com/
+ABIVersion: 5.6.6.e624513f
+CPE-ID: cpe:/a:wolfssl:wolfssl
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 983040
+Filename: libwolfssl5.6.6.e624513f_5.6.6-stable-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 466947
+SHA256sum: 2c7ab4807353f2d4b27025da9ad60d6b58b4af6288477213d2e7196bbef2472c
+Description:  wolfSSL (formerly CyaSSL) is an SSL library optimized for small
+ footprint, both on disk and for memory use.
+
 Package: netifd
 Version: 2024.01.04~f01345ec-r1
 Depends: libc, libuci20130104, libnl-tiny1, libubus20231128, ubus, ubusd, jshn, libubox20240126, libudebug
@@ -13571,6 +14176,47 @@ Filename: netifd_2024.01.04~f01345ec-r1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 96671
 SHA256sum: e234454c81eb05b8c1a7181034b026ba704199284580f2f11b9e0b105f2858c4
 Description:  OpenWrt Network Interface Configuration Daemon
+
+Package: nftables-json
+Version: 1.0.9-r1
+Depends: libc, kmod-nft-core, libnftnl11, jansson4
+Provides: nftables
+Source: feeds/base/package/network/utils/nftables
+SourceName: nftables
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+SourceDateEpoch: 1697805751
+URL: http://netfilter.org/projects/nftables/
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 675840
+Filename: nftables-json_1.0.9-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 283848
+SHA256sum: 56f6786e4c7f5e57d1eb0b14617f2c3e0d77e4f1a74bfc2d2529eb6fb05ba368
+Description:  nftables userspace utility with JSON support
+
+Package: openssl-util
+Version: 3.0.13-r1
+Depends: libc, libopenssl3, libopenssl-conf
+Source: feeds/base/package/libs/openssl
+SourceName: openssl
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: utils
+SourceDateEpoch: 1706852812
+URL: http://www.openssl.org/
+CPE-ID: cpe:/a:openssl:openssl
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 768000
+Filename: openssl-util_3.0.13-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 346621
+SHA256sum: f7baa90d589d400497502a47a78853c88055ecb4f541613982ffebbcb842de9f
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the
+ Transport Layer Security (TLS) protocol as well as a full-strength
+ general-purpose cryptography library.
+ This package contains the OpenSSL command-line utility.
 
 Package: openwrt-keyring
 Version: 2022.03.25~62471e69-r2
@@ -13589,6 +14235,37 @@ Filename: openwrt-keyring_2022.03.25~62471e69-r2_arm_cortex-a9_vfpv3-d16.ipk
 Size: 1153
 SHA256sum: 95756567f3f803e5ef538b1818bc699592fc1d2afb584c9a8ebd539be89dfb31
 Description:  The keyring of with the developer using and gpg public keys.
+
+Package: python3-base
+Version: 3.11.7-r1
+Depends: libc, libpython3-3.11
+Source: feeds/packages/lang/python/python3
+SourceName: python3
+License: Python-2.0.1 0BSD
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+SourceDateEpoch: 1711976881
+URL: https://www.python.org/
+CPE-ID: cpe:/a:python:python
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1075200
+Filename: python3-base_3.11.7-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 222066
+SHA256sum: 2b5ef122e2adcd16fdcfbecd7b51f6850ec8ffaee80cad54660fa8f4c26a0241
+Description:  Python is an interpreted, interactive, object-oriented programming
+ language. It incorporates modules, exceptions, dynamic typing, very high
+ level dynamic data types, and classes. It supports multiple programming
+ paradigms beyond object-oriented programming, such as procedural and
+ functional programming. Python combines remarkable power with very clear
+ syntax. It has interfaces to many system calls and libraries, as well as
+ to various window systems, and is extensible in C or C++. It is also
+ usable as an extension language for applications that need a
+ programmable interface. Finally, Python is portable: it runs on many
+ Unix variants including Linux and macOS, and on Windows.
+ 
+ This package contains only the interpreter and the bare minimum for the
+ interpreter to start.
 
 Package: ubi-utils
 Version: 2.1.6-r1
@@ -13657,6 +14334,129 @@ Filename: ubusd_2023.11.28~f84eb599-r1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 11816
 SHA256sum: b946ae962e850aa6f79ea243ffed4134eb384bac11f20d13e6ac6a4c4260ee1f
 Description:  OpenWrt RPC daemon
+
+Package: unbound-anchor
+Version: 1.19.3-r1
+Depends: libc, ca-bundle, libopenssl3, unbound-daemon, libexpat
+Source: feeds/packages/net/unbound
+SourceName: unbound
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: net
+Require-User: unbound:unbound
+SourceDateEpoch: 1711976881
+URL: https://nlnetlabs.nl/projects/unbound/about
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 51200
+Filename: unbound-anchor_1.19.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 23664
+SHA256sum: 35cb8d6a7d999280fa2a2d44d8253ef17d1cbf4c60251426d9a7feae8ab5f822
+Description:  This package contains the Unbound anchor utility.
+
+Package: unbound-checkconf
+Version: 1.19.3-r1
+Depends: libc, ca-bundle, libopenssl3, unbound-daemon
+Source: feeds/packages/net/unbound
+SourceName: unbound
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: net
+Require-User: unbound:unbound
+SourceDateEpoch: 1711976881
+URL: https://nlnetlabs.nl/projects/unbound/about
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 112640
+Filename: unbound-checkconf_1.19.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 50428
+SHA256sum: 283baca3c62415879c173406b10a31f7df423acdf7e29d5c412a196e40b50e94
+Description:  This package contains the Unbound DNS configuration checker utility.
+
+Package: unbound-control-setup
+Version: 1.19.3-r1
+Depends: libc, ca-bundle, libopenssl3, unbound-control, openssl-util
+Source: feeds/packages/net/unbound
+SourceName: unbound
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: net
+Require-User: unbound:unbound
+SourceDateEpoch: 1711976881
+URL: https://nlnetlabs.nl/projects/unbound/about
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 10240
+Filename: unbound-control-setup_1.19.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 3475
+SHA256sum: 43f806bd2bdd560f78e5d3bd9aca49c2306a3471e3b6b8e6a004698cbd814ac1
+Description:  This package contains the Unbound control setup utility.
+
+Package: unbound-control
+Version: 1.19.3-r1
+Depends: libc, ca-bundle, libopenssl3, unbound-daemon
+Source: feeds/packages/net/unbound
+SourceName: unbound
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: net
+Require-User: unbound:unbound
+SourceDateEpoch: 1711976881
+URL: https://nlnetlabs.nl/projects/unbound/about
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 122880
+Filename: unbound-control_1.19.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 52634
+SHA256sum: caa341f3466eda8ff7ba1afd149a93c39392acc710433632cdf5f66afde50c4f
+Description:  This package contains the Unbound control utility.
+
+Package: unbound-daemon
+Version: 1.19.3-r1
+Depends: libc, ca-bundle, libopenssl3, libunbound
+Source: feeds/packages/net/unbound
+SourceName: unbound
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: net
+Require-User: unbound:unbound
+SourceDateEpoch: 1711976881
+URL: https://nlnetlabs.nl/projects/unbound/about
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 389120
+Filename: unbound-daemon_1.19.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 143166
+SHA256sum: d808507bb982cd8c4357d4a76139273ba484f64f7924e17682e48b5fe543165c
+Description:  This package contains the Unbound daemon including 'libevent', 'libmnl', and
+ 'libpthread' to better handle large networks with heavy query loads. Options
+ are available under libraries/network/libunbound to custom trim Unbound for
+ smaller targets.
+
+Package: unbound-host
+Version: 1.19.3-r1
+Depends: libc, ca-bundle, libopenssl3, libunbound
+Source: feeds/packages/net/unbound
+SourceName: unbound
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: net
+Require-User: unbound:unbound
+SourceDateEpoch: 1711976881
+URL: https://nlnetlabs.nl/projects/unbound/about
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 102400
+Filename: unbound-host_1.19.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 43607
+SHA256sum: 8934aea2c81616bc1a4881b74856aa4a557b31e23bda60b1ab080c6923dbeab8
+Description:  This package contains the Unbound DNS lookup utility.
 
 Package: usign
 Version: 2020.05.23~f1f65026-r1
