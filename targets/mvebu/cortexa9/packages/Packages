@@ -77,6 +77,26 @@ Size: 128168
 SHA256sum: 59c938e526a37aba3fa8e84c10ed2386f765170c72f3be3567d361bba72eff12
 Description:  System CA certificates as a bundle
 
+Package: certtool
+Version: 3.8.3-r1
+Depends: libc, libgnutls
+License: LGPL-2.1-or-later
+Section: utils
+URL: http://www.gnutls.org/
+CPE-ID: cpe:/a:gnu:gnutls
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 184320
+Filename: certtool_3.8.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 75522
+SHA256sum: 12ed4c34716633c50e4c9ea044e68d31a3d4468cb099b5671adcd18b1969e045
+Description:  GnuTLS is a secure communications library implementing the SSL, TLS
+ and DTLS protocols and technologies around them. It provides a simple
+ C language application programming interface (API) to access the secure
+ communications protocols as well as APIs to parse and write X.509, PKCS12,
+ OpenPGP and other required structures. It is aimed to be portable and
+ efficient with focus on security and interoperability.
+ This package contains the GnuTLS certtool utility.
+
 Package: dnsmasq-full
 Version: 2.90-r2
 Depends: libc, libubus20231128, libnettle8, kmod-ipt-ipset, libnetfilter-conntrack3, nftables-json
@@ -147,6 +167,43 @@ Filename: fwtool_2019.11.12~8f7fe925-r1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 4577
 SHA256sum: fe85aad014012796a4dc90f7a17a6c42103b45acd7f74a77fe411cc506fafd34
 Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: gnutls-utils
+Version: 3.8.3-r1
+Depends: libc, libgnutls, libgnutls-dane
+License: LGPL-2.1-or-later
+Section: utils
+URL: http://www.gnutls.org/
+CPE-ID: cpe:/a:gnu:gnutls
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 583680
+Filename: gnutls-utils_3.8.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 226645
+SHA256sum: 076fa77ce774bc94f10c5f37a7918b65b2cffc3cf18f8167058ebc170c3cd3ba
+Description:  GnuTLS is a secure communications library implementing the SSL, TLS
+ and DTLS protocols and technologies around them. It provides a simple
+ C language application programming interface (API) to access the secure
+ communications protocols as well as APIs to parse and write X.509, PKCS12,
+ OpenPGP and other required structures. It is aimed to be portable and
+ efficient with focus on security and interoperability.
+ This package contains the GnuTLS gnutls-cli, gnutls-serv, psktool,
+ and srptool utilities.
+
+Package: ip-tiny
+Version: 6.7.0-r1
+Depends: libc, libnl-tiny1
+Provides: ip
+Alternatives: 200:/sbin/ip:/usr/libexec/ip-tiny
+License: GPL-2.0
+Section: net
+URL: http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 317440
+Filename: ip-tiny_6.7.0-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 145282
+SHA256sum: ac0f9e3f59dc9a49586be6b887e3ad5aea97707646b7162a1523c1b7adef950a
+Description:  Routing control utility (minimal)
 
 Package: jansson4
 Version: 2.14-r3
@@ -6446,6 +6503,19 @@ Size: 3370
 SHA256sum: 30fd1408b4b9a6543c18f9ebbda48837a3cd34413008c77e5d469ebe6df76ddb
 Description:  Object identifier registry
 
+Package: kmod-ovpn-dco-v2
+Version: 6.1.82.0.2.20230426-r1
+Depends: kernel (=6.1.82~7e9d72c9afec89ed924865cc82184791-r1), kmod-crypto-aead, kmod-udptunnel4, kmod-udptunnel6
+License: GPL-2.0-only
+Section: kernel
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 71680
+Filename: kmod-ovpn-dco-v2_6.1.82.0.2.20230426-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 27841
+SHA256sum: a9637e794c2b389adc1d0d0616d597c1eb1eab3d41e080b7769f84ce530604de
+Description:  This module enhances the performance of the OpenVPN userspace software
+ by offloading the data channel processing to kernelspace.
+
 Package: kmod-parport-pc
 Version: 6.1.82-r1
 Depends: kernel (=6.1.82~7e9d72c9afec89ed924865cc82184791-r1), kmod-ppdev
@@ -10238,6 +10308,20 @@ Size: 4233
 SHA256sum: 4a4835ac5743148f95c9b6a71633c0764c7d4c56dccb18ab005d809336b9e2b7
 Description:  blobmsg <-> json conversion library
 
+Package: libcap-ng
+Version: 0.8.4-r1
+Depends: libc
+License: GPL-2.0-or-later LGPL-2.1-or-later
+Section: libs
+URL: https://people.redhat.com/sgrubb/libcap-ng/index.html
+CPE-ID: cpe:/a:libcap-ng_project:libcap-ng
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 30720
+Filename: libcap-ng_0.8.4-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 8850
+SHA256sum: 12afa292094ded5d8208c5fb914c91da89f4436a37ffbbe74c3e4744f8157af7
+Description:  POSIX capabilities library library
+
 Package: libevent2-7
 Version: 2.1.12-r2
 Depends: libc
@@ -10312,18 +10396,32 @@ SHA256sum: d45f509394ca0cd11fd2e6fedab9a7935d798a7c572304bdaf702fb9dc44a148
 Description:  GMP is a free library for arbitrary precision arithmetic, operating on
  signed integers, rational numbers, and floating point numbers.
 
-Package: libgnutls
+Package: libgnutls-dane
 Version: 3.8.3-r1
-Depends: libc, libnettle8, libgmp10, libtasn1, kmod-cryptodev, libatomic1
+Depends: libc, libgnutls, libunbound
 License: LGPL-2.1-or-later
 Section: libs
 URL: http://www.gnutls.org/
 CPE-ID: cpe:/a:gnu:gnutls
 Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 1945600
+Installed-Size: 40960
+Filename: libgnutls-dane_3.8.3-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 18365
+SHA256sum: 3aeec14f0b5311db9da676c31e8fb163511dcfd7887d4ee1958ccb24a145464e
+Description:  GNU TLS (libgnutls-dane library)
+
+Package: libgnutls
+Version: 3.8.3-r1
+Depends: libc, libnettle8, libgmp10, libtasn1, p11-kit, kmod-cryptodev, libatomic1
+License: LGPL-2.1-or-later
+Section: libs
+URL: http://www.gnutls.org/
+CPE-ID: cpe:/a:gnu:gnutls
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 2078720
 Filename: libgnutls_3.8.3-r1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 915917
-SHA256sum: 0ef306e319506d0d6aac7b382d1e1f8d56ea2b12e0adc63b629968850eb920e2
+Size: 971083
+SHA256sum: af3cad5698cdcabd7ce5815cbc32662e4f40105566994f57b7b3d37164d136f9
 Description:  GnuTLS is a secure communications library implementing the SSL, TLS
  and DTLS protocols and technologies around them. It provides a simple
  C language application programming interface (API) to access the secure
@@ -10347,6 +10445,40 @@ Filename: libjson-c5_0.17-r1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 25584
 SHA256sum: 03b8d427da45ac61ca3979e87116bf0bb75d2c54b42893f98f20d00f2158ae06
 Description:  This package contains a library for javascript object notation backends.
+
+Package: liblz4-1
+Version: 1.9.4-r1
+Depends: libc
+Provides: liblz4
+License: BSD-2-Clause
+Section: libs
+URL: https://www.lz4.org/
+ABIVersion: -1
+CPE-ID: cpe:/a:lz4_project:lz4
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 163840
+Filename: liblz4-1_1.9.4-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 76619
+SHA256sum: e8d5af030fb60d66042929e6d67901bc828692c9687cf2160f95942794a2f5fd
+Description:  LZ4 is a compression codec that features a very fast encoder and an
+ even faster decoder. This package provides the liblz4 shared library.
+
+Package: liblzo2
+Version: 2.10-r4
+Depends: libc
+Provides: liblzo
+License: GPL-2.0-or-later
+Section: libs
+URL: http://www.oberhumer.com/opensource/lzo/
+ABIVersion: 2
+CPE-ID: cpe:/a:oberhumer:lzo
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 102400
+Filename: liblzo2_2.10-r4_arm_cortex-a9_vfpv3-d16.ipk
+Size: 36336
+SHA256sum: 1f4b5aa199d64fa61eeeb6897d4a406529112723fefb44dcf314ef880c9c3946
+Description:  LZO is a data compression library which is suitable for data de-/compression
+ in real-time. This means it favours speed over compression ratio.
 
 Package: libmnl0
 Version: 1.0.5-r1
@@ -10383,6 +10515,22 @@ Description:  libmnl is a minimalistic user-space library oriented to Netlink de
  * Decoupling: the interdependency of the main bricks that compose the library
  is reduced, i.e. the library provides many helpers, but the programmer is not
  forced to use them.
+
+Package: libncurses6
+Version: 6.4-r2
+Depends: libc, terminfo
+Provides: libncursesw, libncurses, libncursesw6
+License: MIT
+Section: libs
+URL: http://www.gnu.org/software/ncurses/
+ABIVersion: 6
+CPE-ID: cpe:/a:gnu:ncurses
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 358400
+Filename: libncurses6_6.4-r2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 157248
+SHA256sum: 3eea4d949846994bb694a574f72530f78b7c4347b8d87550d9c7d62b6b5ee252
+Description:  Terminal handling library (Unicode)
 
 Package: libnetfilter-conntrack3
 Version: 1.0.9-r2
@@ -10503,9 +10651,26 @@ Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  general-purpose cryptography library.
  This package installs the OpenSSL configuration file /etc/ssl/openssl.cnf.
 
+Package: libopenssl-legacy
+Version: 3.0.13-r1
+Depends: libc, libopenssl3, libopenssl-conf
+License: Apache-2.0
+Section: libs
+URL: http://www.openssl.org/
+CPE-ID: cpe:/a:openssl:openssl
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 81920
+Filename: libopenssl-legacy_3.0.13-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 28783
+SHA256sum: 431cbe3c2db6f9c740ac26dc4ff0634fe275c3c06e09e3c8ed0ff5eafcac94ad
+Description:  The OpenSSL legacy provider supplies OpenSSL implementations of algorithms that
+ have been deemed legacy. Such algorithms have commonly fallen out of use, have
+ been deemed insecure by the cryptography community, or something similar.  See
+ https://www.openssl.org/docs/man3.0/man7/OSSL_PROVIDER-legacy.html
+
 Package: libopenssl3
 Version: 3.0.13-r1
-Depends: libc, kmod-cryptodev, libatomic1
+Depends: libc, zlib, kmod-crypto-user, kmod-cryptodev, libatomic1
 Provides: libopenssl
 License: Apache-2.0
 Section: libs
@@ -10513,10 +10678,10 @@ URL: http://www.openssl.org/
 ABIVersion: 3
 CPE-ID: cpe:/a:openssl:openssl
 Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 3635200
+Installed-Size: 3870720
 Filename: libopenssl3_3.0.13-r1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 1718867
-SHA256sum: d232dccd8b6e52d821989d466efd05a8124e19f47d5dbc8c1bf3a78b85e343a2
+Size: 1819121
+SHA256sum: a825808d55e7067d43d11439a03eb36456531ae96859c120ff92216c4e67dd37
 Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, full-featured, and Open Source toolkit implementing the
  Transport Layer Security (TLS) protocol as well as a full-strength
@@ -10596,6 +10761,27 @@ Description:  Python is an interpreted, interactive, object-oriented programming
  
  This package contains only core Python library.
 
+Package: libreadline8
+Version: 8.2-r1
+Depends: libc, libncursesw6
+Provides: libreadline
+License: GPL-3.0-or-later
+Section: libs
+URL: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+ABIVersion: 8
+CPE-ID: cpe:/a:gnu:readline
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 276480
+Filename: libreadline8_8.2-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 126711
+SHA256sum: a3fa6bdc252621c829b18e4dd72ed00d89771602b730ceb851ea4724d2938168
+Description:  The Readline library provides a set of functions for use by applications
+ that allow users to edit command lines as they are typed in. Both Emacs
+ and vi editing modes are available. The Readline library includes
+ additional functions to maintain a list of previously-entered command
+ lines, to recall and perhaps reedit those lines, and perform csh-like
+ history expansion on previous commands.
+
 Package: librt
 Version: 1.2.4-r4
 Depends: libpthread
@@ -10644,6 +10830,25 @@ Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software 
  The design choices, particularly in regard to the Curve25519 Diffie-Hellman function, emphasize security (whereas NIST curves emphasize "performance" at the cost of security), and "magic constants" in NaCl/Sodium have clear rationales.
  The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
  And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
+
+Package: libsqlite3-0
+Version: 3410200-r1
+Depends: libc, libpthread, zlib
+Provides: libsqlite3
+License: PUBLICDOMAIN
+Section: libs
+URL: http://www.sqlite.org/
+ABIVersion: -0
+CPE-ID: cpe:/a:sqlite:sqlite
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 921600
+Filename: libsqlite3-0_3410200-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 508043
+SHA256sum: fd961406c7e5732f3d840b9cafb3de87b6354a03d13faa7a6cb8f7abdddb473b
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
 
 Package: libstdcpp6
 Version: 13.2.0-r4
@@ -10765,6 +10970,24 @@ Description:  The UUID library is used to generate unique identifiers for object
  generates UUIDs compatible with those created by the Open Software
  Foundation (OSF) Distributed Computing Environment (DCE) utility.
 
+Package: libwolfssl5.6.6.d4527a62
+Version: 5.6.6-stable-r1
+Depends: libc, kmod-cryptodev
+Conflicts: libwolfsslcpu-crypto
+Provides: libcyassl, libwolfssl, libcyassl5.6.6.d4527a62
+License: GPL-2.0-or-later
+Section: libs
+URL: http://www.wolfssl.com/
+ABIVersion: 5.6.6.d4527a62
+CPE-ID: cpe:/a:wolfssl:wolfssl
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1013760
+Filename: libwolfssl5.6.6.d4527a62_5.6.6-stable-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 485296
+SHA256sum: 67afef2b1f463cd35c6675b590b5983b16a26fbe91903d86e3e9736d96a21a9d
+Description:  wolfSSL (formerly CyaSSL) is an SSL library optimized for small
+ footprint, both on disk and for memory use.
+
 Package: libwolfssl5.6.6.e624513f
 Version: 5.6.6-stable-r1
 Depends: libc, kmod-cryptodev
@@ -10782,6 +11005,21 @@ Size: 466947
 SHA256sum: 2c7ab4807353f2d4b27025da9ad60d6b58b4af6288477213d2e7196bbef2472c
 Description:  wolfSSL (formerly CyaSSL) is an SSL library optimized for small
  footprint, both on disk and for memory use.
+
+Package: lz4
+Version: 1.9.4-r1
+Depends: libc, liblz4-1
+License: GPL-2.0-or-later
+Section: utils
+URL: https://www.lz4.org/
+CPE-ID: cpe:/a:lz4_project:lz4
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 225280
+Filename: lz4_1.9.4-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 106091
+SHA256sum: b3d4fcd0499123495b618a270978048ba0a227a8f9442c0a3042c642414365a4
+Description:  LZ4 - Fast real-time compression algorithm.
+ This package provides the lz4 binaries.
 
 Package: netifd
 Version: 2024.01.04~f01345ec-r1
@@ -10817,15 +11055,30 @@ Section: utils
 URL: http://www.openssl.org/
 CPE-ID: cpe:/a:openssl:openssl
 Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 768000
+Installed-Size: 778240
 Filename: openssl-util_3.0.13-r1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 346621
-SHA256sum: f7baa90d589d400497502a47a78853c88055ecb4f541613982ffebbcb842de9f
+Size: 350902
+SHA256sum: 6ac09b297a44f7b7ef2f961d14162e3bc3f89738219d532615bc892913d3c05f
 Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, full-featured, and Open Source toolkit implementing the
  Transport Layer Security (TLS) protocol as well as a full-strength
  general-purpose cryptography library.
  This package contains the OpenSSL command-line utility.
+
+Package: openvpn-openssl
+Version: 2.6.10-r1
+Depends: libc, kmod-tun, libcap-ng, liblzo2, liblz4-1, ip, libopenssl3
+Provides: openvpn, openvpn-crypto
+License: GPL-2.0
+Section: net
+URL: http://openvpn.net
+CPE-ID: cpe:/a:openvpn:openvpn
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 624640
+Filename: openvpn-openssl_2.6.10-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 278732
+SHA256sum: aab6e10147606211aa8c2bca4f907cfa84717f24a3e3af45aad78b6e02f11dca
+Description:  Open source VPN solution using OpenSSL
 
 Package: openwrt-keyring
 Version: 2022.03.25~62471e69-r2
@@ -10840,6 +11093,22 @@ Filename: openwrt-keyring_2022.03.25~62471e69-r2_arm_cortex-a9_vfpv3-d16.ipk
 Size: 1153
 SHA256sum: 95756567f3f803e5ef538b1818bc699592fc1d2afb584c9a8ebd539be89dfb31
 Description:  The keyring of with the developer using and gpg public keys.
+
+Package: p11-kit
+Version: 0.24.1-r2
+Depends: libc, libtasn1, libpthread
+License: BSD-3-Clause
+Section: libs
+URL: https://p11-glue.github.io/p11-glue/p11-kit.html
+CPE-ID: cpe:/a:p11-kit_project:p11-kit
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 921600
+Filename: p11-kit_0.24.1-r2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 216732
+SHA256sum: 1ff5de188c6091b913c13d1cb541ae239d896c85c22e17f8263b8b3c66fe5e34
+Description:  Provides a way to load and enumerate PKCS11 modules. Provides a
+ standard configuration setup for installing PKCS11 modules in such a
+ way that they are discoverable.
 
 Package: python3-base
 Version: 3.11.7-r1
@@ -10866,6 +11135,38 @@ Description:  Python is an interpreted, interactive, object-oriented programming
  
  This package contains only the interpreter and the bare minimum for the
  interpreter to start.
+
+Package: sqlite3-cli
+Version: 3410200-r1
+Depends: libc, libsqlite3-0, libreadline8, libncursesw6
+License: PUBLICDOMAIN
+Section: utils
+URL: http://www.sqlite.org/
+CPE-ID: cpe:/a:sqlite:sqlite
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 245760
+Filename: sqlite3-cli_3410200-r1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 117220
+SHA256sum: b51608104c7b59c6427af903c854f7ecbe2210891e8349012388b3306817c619
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains a terminal-based front-end to the SQLite (v3.x) library
+ that can evaluate queries interactively and display the results in multiple
+ formats.
+
+Package: terminfo
+Version: 6.4-r2
+Depends: libc
+License: MIT
+Section: libs
+URL: http://www.gnu.org/software/ncurses/
+CPE-ID: cpe:/a:gnu:ncurses
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 61440
+Filename: terminfo_6.4-r2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 8924
+SHA256sum: c59e5b3a009225dddb03170f5dc9030ee0afd592ac4fd182b06c352a5eab32f3
+Description:  Terminal Info Database (ncurses)
 
 Package: ubi-utils
 Version: 2.1.6-r1
