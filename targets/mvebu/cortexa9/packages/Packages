@@ -57,10 +57,10 @@ URL: http://busybox.net/
 CPE-ID: cpe:/a:busybox:busybox
 Essential: yes
 Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 686080
+Installed-Size: 675840
 Filename: busybox_1.36.1-r1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 337823
-SHA256sum: 11b3f7bae129becc6c56312fa9184c8097ee675b0027aa91fe623bf4ac652297
+Size: 335794
+SHA256sum: cddfda072aec77777307778d7d4734fb710344eb5f3881752652810371b72dbc
 Description:  The Swiss Army Knife of embedded Linux.
  It slices, it dices, it makes Julian Fries.
 
